@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Form</title>
+
+    
+</head>
+
+<body>
+    <main>
+    <section id="forms">           
+        <form id="form">
+            <div class="fake-header">
+                <img class="logo" src="data 1.png" alt="login image">
+            </div>
+                
+            <h1 class="title">Intern Sign Up</h1>
+                
+
+            <div class="form-group-name">
+                <label for="name" class="required">Full Name</label>
+                <input type="text" id="name" class="input-name" placeholder="Name">
+                <span class="error"></span>
+            </div>
+            
+            <section class="separation">
+                
+                <div class="union-e-p">
+                    <div class="form-group-email">
+                        <label for="email" class="required">Email</label>
+                        <input type="email" id="email" class="input-email"  placeholder="foo@bar.com">
+                    </div>
+    
+                    <div class="form-group-phone">
+                        <label for="phone" class="required-phone">Phone</label>
+                        <input type="number" id="phone" class="input-phone"  placeholder="(83) 00000-0000" maxlength="11">
+                    </div>
+                </div>
+
+                <div class="union-p-b">
+                    <div class="form-group-password">
+                        <label for="password" class="required">Password</label>
+                        <input type="password" id="password" class="input-password">
+                    </div>
+                        
+                    <div class="form-group-birthday">
+                        <label for="birthday" class="required">Birthday</label>
+                        <input type="date" id="birthday" class="input-birthday" value="2002-04-02">
+                    </div> 
+                </div>
+                
+            </section>
+
+            <div class="fake-footer">
+                
+                <label class="container">I accept the terms and privacy
+                    <div class="reverse">
+                        <input type="checkbox" checked required>
+                        <span class="check"></span>
+                    </div>
+                </label>
+               
+                    
+                <div class="register"> 
+                    <button id="action-btn" class="btn-register">Register</button>
+                </div>
+            </div>
+        </form> 
+    </section>
+    
+    <section id="new-page">
+        <div class="division">
+            <div class="separation-2">
+                <div class="fake-header-2">
+                    <img class="logo-2" src="data 1.png" alt="login image">
+                </div>
+
+                <h1 class="title-2">Sucess!</h1>
+            </div>
+            <div class="register-2"> 
+                <button id="action-btn-2" class="btn-register-2">Go Back!</button>
+            </div>
+        </div>
+    </section>
+    </main>   
+</body>
+</html>
