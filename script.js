@@ -1,49 +1,45 @@
-// const fields = document.querySelectorAll("[required]")
+var btn = document.querySelector('#action-btn');
+var formu = document.querySelector('#forms');
+var page2 = document.querySelector('#new-page');
+var btn2 = document.querySelector('#action-btn-2');
 
-// //console.log(fields)
+/*Lógica primeiro botão*/
+btn.addEventListener('click', function() {
 
-// function customValidation(event){
+    if(page2.style.display = 'none'){
+       page2.style.display = 'block';
+    }
 
-//     // eliminar o bubble
-//     event.preventDefault()
+})
 
+btn.addEventListener('click', function() {
 
+    if(formu.style.display = 'block'){
+       formu.style.display = 'none';
+    }
 
-//     const field = event.target
+})
 
-//     //logica para verificar se existem erros
-//     function verifyErrors(){
-//         let foundError = false;
-        
-//         for(let error in field.validity){
-//             // se não for customError
-//             // então verifica se tem erro
-//             if (field.validity[error] && field.validity.valid){
-//                 foundError = error
-//             }
+/*Lógica Segundo Botão*/
 
-//         }
-//         return foundError
-//     }
+btn2.addEventListener('click', function() {
 
-//     const error = verifyErrors()
+    if(page2.style.display = 'block'){
+       page2.style.display = 'none';
+    }
 
+})
 
-//     const spanError = field.parentNode.querySelector("span.error")
+btn2.addEventListener('click', function() {
 
-//     if(error) {
-//         spanError.classList.add("active")
-//         spanError.innerHTML = "Campo Obrigatório"
+    if(formu.style.display = 'none'){
+       formu.style.display = 'block';
+    }
 
-//     } else {
-//         spanError.classList.remove("active")
-//         spanError.innerHTML = ""
-//     }
+})
 
-// }
+const form = document.getElementById('form')
 
-// for( field of fields){
-//     field.addEventListener("invalid", customValidation)
-//     field.addEventListener("blur", customValidation)
-// }
- 
+form.addEventListener('submit', e => {
+    e.preventDefault()
+})
