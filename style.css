@@ -162,9 +162,14 @@ body {
     padding: 0.3em;
     display: block;
 }
-input[type="text"]::-webkit-calendar-picker-indicator {
+
+/*SETA DATA*/
+/* input[type="date"]::-webkit-calendar-picker-indicator {
     background: url(seta.png) no-repeat;
-}
+} */
+
+
+
 /*Footer*/
 
 .fake-footer {
