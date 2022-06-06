@@ -94,16 +94,7 @@ body {
     width: 35%;
 }
 
-/*Retirar as setas*/
 
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type=number]{
-    -moz-appearance: textfield;
-}
 
 #phone {
     border-radius: 0.5em;
@@ -162,13 +153,22 @@ input[type=number]{
     display: flex;
     flex-direction: column;
     width: 35%;
+    
 }
 
 #birthday {
     border-radius: 0.5em;
     border: 0.2em solid #AAAAAA;
     padding: 0.3em;
+    display: block;
 }
+
+/*SETA DATA*/
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(seta.png) no-repeat;
+} */
+
+
 
 /*Footer*/
 
@@ -309,6 +309,25 @@ input[type=number]{
 }
 
 
+/*VALIDAÇÕES*/
+#validation-name, #validation-email, #validation-phone, #validation-password, #validation-birthday{
+    font-size: 0.8em;
+    color: red;
+}
+
+#main-check {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+#validation-checkbox {
+    display: flex;
+    font-size: 0.8em;
+    color: red;
+}
+
 /*MOBILE*/
 
 @media only screen and (max-width: 650px){
@@ -336,8 +355,7 @@ input[type=number]{
         flex-basis: 8%;
     }
    
-
-
+    
 
     /*SEPARATION*/
     .separation {
@@ -413,6 +431,13 @@ input[type=number]{
         height: 100%;
     }
 
+    #main-check {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
 
     /*REGISTER*/
     .register {
