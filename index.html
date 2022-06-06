@@ -28,7 +28,9 @@
             <div class="form-group-name">
                 <label for="name" class="required">Full Name</label>
                 <input type="text" id="name" class="input-name" placeholder="Name">
-                <span class="error"></span>
+                <div id="validation-name" style="display: none">
+                    Fullname invalid
+                </div>
             </div>
             
             <section class="separation">
@@ -37,11 +39,17 @@
                     <div class="form-group-email">
                         <label for="email" class="required">Email</label>
                         <input type="email" id="email" class="input-email"  placeholder="foo@bar.com">
+                        <div id="validation-email" style="display: none">
+                            Email Invalid
+                        </div>
                     </div>
     
                     <div class="form-group-phone">
                         <label for="phone" class="required-phone">Phone</label>
-                        <input type="number" id="phone" class="input-phone"  placeholder="(83) 00000-0000" maxlength="11">
+                        <input type="text" id="phone" class="input-phone"  placeholder="(83) 00000-0000" maxlength="15">
+                        <div id="validation-phone" style="display: none">
+                            Phone Invalid
+                        </div>
                     </div>
                 </div>
 
@@ -49,11 +57,17 @@
                     <div class="form-group-password">
                         <label for="password" class="required">Password</label>
                         <input type="password" id="password" class="input-password">
+                        <div id="validation-password" style="display: none">
+                            Password Invalid
+                        </div>
                     </div>
                         
                     <div class="form-group-birthday">
                         <label for="birthday" class="required">Birthday</label>
-                        <input type="date" id="birthday" class="input-birthday" value="2002-04-02">
+                        <input type="text" id="birthday" class="input-birthday" placeholder="yyyy/mm/dd" maxlength="10">
+                        <div id="validation-birthday" style="display: none">
+                            Age Invalid
+                        </div>
                     </div> 
                 </div>
                 
@@ -61,16 +75,21 @@
 
             <div class="fake-footer">
                 
-                <label class="container">I accept the terms and privacy
-                    <div class="reverse">
-                        <input type="checkbox" checked required>
-                        <span class="check"></span>
+                <div id="main-check">
+                    <label class="container">I accept the terms and privacy
+                        
+                        <div class="reverse">
+                            <input type="checkbox" checked="checked" id="checkbox">
+                            <span class="check"></span>
+                        </div>
+                    </label>
+                    <div id="validation-checkbox" style="display: none">
+                        You must accept the terms
                     </div>
-                </label>
-               
+                </div>
                     
                 <div class="register"> 
-                    <button id="action-btn" class="btn-register">Register</button>
+                    <button type="button" id="action-btn" class="btn-register" >Register</button>
                 </div>
             </div>
         </form> 
@@ -86,7 +105,7 @@
                 <h1 class="title-2">Sucess!</h1>
             </div>
             <div class="register-2"> 
-                <button id="action-btn-2" class="btn-register-2">Go Back!</button>
+                <button type="button" id="action-btn-2" class="btn-register-2">Go Back!</button>
             </div>
         </div>
     </section>
